@@ -1,8 +1,8 @@
 ================================================================================
 Software under third party
 ================================================================================
-Software libraries under third_party are provided as github submodule
-links. Their licences can be found under the respective software repositories.
+Third party libraries are pulled in during the build process with CMake.
+Their licences follow.
 
 
 ================================================================================
