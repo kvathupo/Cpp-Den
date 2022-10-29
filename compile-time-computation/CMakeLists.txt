@@ -1,5 +1,8 @@
 ################################################################################
 #
+#   @TODO:
+#       - Clean-up version checking that was due to ubuntu pathing...
+#
 #   If unfamiliar with cmake, usage (where pwd has my code):
 #       > mkdir ./build && cd build
 #       > cmake ..
