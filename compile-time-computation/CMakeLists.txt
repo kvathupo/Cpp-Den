@@ -15,8 +15,8 @@ cmake_minimum_required(VERSION 3.14)
 project(CompileTime)
 
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_BUILD_TYPE Release)
 
 ################################################################################
@@ -51,10 +51,10 @@ enable_testing()
 
 add_executable(sqrt_test ${CMAKE_SOURCE_DIR}/test/sqrt_test.cpp)
 target_include_directories(sqrt_test PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_compile_features(sqrt_test PUBLIC cxx_std_20)
+#target_compile_features(sqrt_test PUBLIC cxx_std_20)
 target_link_libraries(sqrt_test GTest::gtest_main)
 
-target_compile_options(sqrt_test PUBLIC -O3 -std=c++20)
+target_compile_options(sqrt_test PUBLIC -O3)
 
 include(GoogleTest)
 gtest_discover_tests(sqrt_test)
